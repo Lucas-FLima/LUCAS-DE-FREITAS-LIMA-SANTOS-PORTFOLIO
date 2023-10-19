@@ -1,0 +1,548 @@
+/* Resetando padding e margin, e definindo box-sizing globalmente */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #1d0139;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Início do CSS do Botão de go to top */
+#goTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 999;
+  font-size: 18px;
+  color: #fff;
+  background: #3ce37c;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+#goTopBtn:hover {
+  background-color: #26332b;
+  color: #3ce37c;
+}
+/* Fim do CSS do botão go to top */
+
+/* Container é responsáel por limitar o width de conteúdo da página */
+.container {
+  max-width: 1140px;
+  width: 100vw;
+}
+
+/* Início do CSS do Header. */
+header {
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  width: 100%;
+  background-color: rgba(27, 27, 27, 0.8);
+  z-index: 998;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+}
+
+nav ul li {
+  list-style: none;
+  margin-right: 30px;
+}
+
+nav ul li:last-child {
+  margin-right: 0;
+}
+
+nav ul li a:hover {
+  border-bottom: 5px solid #3ce37c;
+  border-radius: 1px;
+  color: #3ce37c;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 70px;
+}
+/* Fim do CSS do Header */
+
+/* Início do CSS da Main */
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#apresentacao {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 670px;
+  margin-top: 218px;
+}
+
+#apresentacao h3 {
+  font-size: 40px;
+  font-weight: 500;
+  color: #3ce37c;
+  text-align: center;
+}
+
+#apresentacao h1 {
+  font-size: 130px;
+  font-weight: 700;
+  color: #fff;
+}
+
+/* Início da animação do ícone hand */
+.animation {
+  display: inline-block;
+  position: relative;
+  animation-name: rotation;
+  animation-duration: 700ms;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(65deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+/* Fim da animação do ícone hand */
+
+/* Início das animações das letras */
+#firstL {
+  color: #3ce37c;
+  display: inline-block;
+  position: relative;
+  animation-name: firstL;
+  animation-duration: 2000ms;
+  animation-timing-function: ease;
+}
+
+@keyframes firstL {
+  0% {
+    transform: rotate(45deg);
+  }
+
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
+.ucas {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  animation-name: lettersUCAS;
+  animation-duration: 2000ms;
+  animation-timing-function: ease-in;
+  overflow: hidden;
+  animation-fill-mode: forwards;
+  max-width: 0px;
+  animation-delay: 500ms;
+}
+
+@keyframes lettersUCAS {
+  0% {
+    max-width: 0px;
+  }
+
+  100% {
+    max-width: 1000px;
+  }
+}
+
+.secondL {
+  color: #3ce37c;
+  display: inline-block;
+  position: relative;
+  animation-name: secondL;
+  animation-duration: 1800ms;
+  animation-timing-function: ease;
+}
+
+@keyframes secondL {
+  0% {
+    transform: translateX(-50px) translateY(18px) rotate(-135deg);
+  }
+
+  100% {
+    transform: translateX(0px) rotate(0deg);
+  }
+}
+
+.ima {
+  color: #fff !important;
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+  animation-name: letterIMA;
+  animation-duration: 2000ms;
+  animation-timing-function: ease-in;
+  overflow: hidden;
+  animation-fill-mode: forwards;
+  max-width: 0px;
+  animation-delay: 500ms;
+}
+
+@keyframes letterIMA {
+  0% {
+    max-width: 0px;
+  }
+
+  100% {
+    max-width: 1000px;
+  }
+}
+/* Fim das animações das letras */
+
+.especificacao {
+  color: #fff !important;
+  font-size: 37px;
+  font-weight: 500;
+  font-style: italic;
+  line-height: 40px;
+  margin-top: 16px;
+}
+
+/* Para cores mais claras do background para dividir as sections */
+.light {
+  background-color: rgba(255, 255, 255, 0.1);
+  margin-top: 227px;
+  width: 100%;
+}
+
+/* Início do CSS da section Sobre */
+#sobre {
+  display: flex;
+  justify-content: center;
+}
+
+.sobreContent {
+  display: flex;
+  align-items: center;
+  padding: 200px 0px;
+}
+
+.img_perfil img {
+  width: 220px;
+  height: 220px;
+  border-radius: 50%;
+  margin-right: 90px;
+}
+
+.sobre_descricao h2,
+.conh_title h2,
+.portfolio_title h2 {
+  font-size: 50px;
+  font-weight: 700;
+  color: #3ce37c;
+  margin-bottom: 24px;
+}
+
+.sobre_descricao h2::after,
+.conh_title h2::after,
+.portfolio_title h2::after {
+  content: "";
+  display: block;
+  width: 132px;
+  border-radius: 2px;
+  height: 3px;
+  background-color: #3ce37c;
+  margin-top: 3px;
+}
+
+.sobre_descricao li {
+  font-size: 23px;
+  color: #fff;
+  font-weight: 500;
+  line-height: 30px;
+  text-align: justify;
+  padding: 5px 0px;
+}
+/* Fim do CSS da section Sobre */
+
+/* Início do CSS da section Conhecimentos */
+#conhecimentos {
+  padding: 150px 0px 0px;
+  max-width: 1140px;
+}
+
+.conhecimentosContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.conh_tech {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px;
+}
+
+.tech_card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #341b4e;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.tech_card h3 {
+  font-size: 25px;
+  font-weight: bold;
+  max-width: 50%;
+  color: #fff;
+  margin-top: 20px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.tech_card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+}
+
+.tech_card:hover,
+.tech_card:hover h3,
+.tech_card:hover .stack {
+  color: #3ce37c;
+}
+
+.stack {
+  font-size: 150px;
+  color: #fff;
+}
+/* Fim do CSS da section Conhecimentos */
+
+/* Início do CSS da section Portfólio */
+#portfolio {
+  padding: 30px 0px;
+  display: flex;
+  justify-content: center;
+}
+
+.portfolioContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.projetos {
+  flex-direction: column;
+  align-items: center;
+  padding-top: 60px; 
+}
+
+.medicenter,
+.starbucks,
+.awax,
+.tributo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  width: 100%;
+}
+
+.medicenter h3,
+.starbucks h3,
+.awax h3,
+.tributo h3 {
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.techs {
+  display: flex;
+  align-items: center;
+}
+
+.techs img {
+  margin-right: 17px;
+}
+
+.techs img:last-child {
+  margin-right: 0;
+}
+
+.visualizacoes a {
+  display: inline-block;
+  width: 38px;
+  height: 38px;
+  margin-right: 20px;
+}
+
+.visualizacoes a:hover .icons {
+  color: #3ce37c;
+}
+
+.visualizacoes a:last-child {
+  margin-right: 0;
+}
+
+.icons {
+  font-size: 25px;
+  color: #fff;
+}
+
+.awax_image a,
+.starbucks_image a,
+.medicenter_image a,
+.tributo_image a {
+  display: block;
+  height: 100%;
+}
+
+.containerImages {
+  width: 1140px;
+  height: 500px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+}
+
+.medicenter_image {
+  background-image: url("../images/medicenter.png");
+}
+
+.starbucks_image {
+  background-image: url("../images/starbucks.png");
+}
+
+.awax_image {
+  background-image: url("../images/awax.png");
+}
+
+.tributo_image {
+  background-image: url("../images/tribute.png");
+}
+/* Fim do CSS da Section Portfólio */
+
+/* Início do CSS do Formulário */
+#contact {
+  padding: 150px 0px 0px;
+  max-width: 1140px;
+  margin-bottom: 100px;
+}
+
+.contacts {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+}
+
+input, textarea {
+  width: 50%;
+  height: 50px;
+  border-radius: 5px;
+  border: none;
+  border-bottom: 1px solid #eee;
+  padding: 0px 20px;
+  font-size: 18px;
+  font-weight: 500;
+  background: transparent;
+  color: #FFF;
+  outline: none;
+}
+
+textarea {
+  height: 150px;
+  border: 1px solid #eee;
+  resize: none;
+  padding: 10px;
+}
+
+.sendBtn {
+  padding: 15px 20px;
+  color: #fff;
+  background-color: #341b4e;
+  border-radius: 10px;
+  border: none;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.sendBtn:hover {
+  background-color: #3ce37c;
+  box-shadow: 2px 2px 2px #eee;
+  border: none;
+  color: #000;
+}
+/* Fim do CSS do Formulário */
+
+/* Início do CSS do Footer */
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  padding: 30px 0px;
+}
+
+.copyright {
+  font-size: 13px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.copyright a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.copyright a:hover {
+  color: #fff;
+  text-decoration: underline;
+}
+/* Fim do CSS do Footer */

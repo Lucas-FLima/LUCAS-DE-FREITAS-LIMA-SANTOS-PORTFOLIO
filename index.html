@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Importação da folha de estilização -->
+    <link rel="stylesheet" href="./assets//style/style.css" />
+
+    <!-- Importação da imagem de Logo para a tabBar -->
+    <link rel="icon" type="image/x-icon" href="./assets/images/logo_LLsn.png" />
+
+    <!-- Importações de fontes do google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,500;0,700;1,500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Importação do fontawesome para uso de ícones -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.0.0/css/all.css"
+      integrity="sha384-3B6NwesSXE7YJlcLI9RpRqGf2p/EgVH8BgoKTaUrmKNDkHPStTQ3EyoYjCGXaOTS"
+      crossorigin="anonymous"
+    />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v6.0.0/js/all.js"
+      integrity="sha384-l+HksIGR+lyuyBo1+1zCBSRt6v4yklWu7RbG0Cv+jDLDD9WFcEIwZLHioVB4Wkau"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Portfólio Lucas Lima</title>
+  </head>
+  <body>
+    <!-- Botão para to scroll top -->
+    <button onclick="goToTop()" id="goTopBtn">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <!-- Header de menu da página -->
+    <header>
+      <div class="container header">
+        <div>
+          <img
+            src="./assets/images/logo_LLsn.png"
+            alt="Logo Lucas Lima"
+            width="70"
+          />
+        </div>
+        <!-- Menu de navegação da página -->
+        <nav>
+          <ul>
+            <li>
+              <a href="#sobre">Sobre</a>
+            </li>
+            <li>
+              <a href="#conhecimentos">Conhecimentos</a>
+            </li>
+            <li>
+              <a href="#portfolio">Portfólio</a>
+            </li>
+            <li>
+              <a href="#contact">Contato</a>
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/lucas-lima-625116231/"
+                target="_blank"
+              >
+                <i class="fa-brands fa-linkedin fa-xl"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/Lucas-FLima" target="_blank">
+                <i class="fa-brands fa-github fa-xl"></i>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!-- Main da página -->
+    <main>
+      <!-- Section de apresentação inicial -->
+      <section id="apresentacao" class="container">
+        <h3>Olá <span class="animation">👋</span>! Eu sou o</h3>
+        <h1>
+          <span id="firstL">L</span><span class="ucas">ucas</span
+          ><span class="secondL">L</span><span class="ima">ima</span>
+        </h1>
+        <h3>Desenvolvedor Full Stack</h3>
+        <h3 class="especificacao">
+          Soluções inteligentes para problemas complexos.
+        </h3>
+      </section>
+
+      <!-- Section de Sobre -->
+      <section class="light" id="sobre">
+        <div class="sobreContent container">
+          <div class="img_perfil">
+            <img
+              src="./assets/images/perfil.jpeg"
+              alt="Foto de Perfil de Lucas Lima"
+            />
+          </div>
+          <div class="sobre_descricao">
+            <h2>Sobre mim</h2>
+            <ul>
+              <li>
+                <p>
+                  Atuo com responsabilidade, pontualidade, seriedade e
+                  inteligência. Agilidade e êxito são palavras que caminham
+                  juntas comigo em qualquer tarefa que eu faça.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Tenho 24 anos, curso Engenharia de Software no Centro
+                  Universitário Internacional - UNINTER.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Atualmente trabalho como desenvolvedor Full Stack na Resoluti há 6 meses.
+                </p>
+              </li>
+              <li>
+                <p>Amo resolver desafios.</p>
+              </li>
+              <li>
+                <p>Sou apaixonado por tecnologia.</p>
+              </li>
+              <li>
+                <p>
+                  Gosto de trabalhar em equipe, aprender e ensinar coisas novas
+                  às pessoas.
+                </p>
+              </li>
+              <li>
+                <p>
+                  Faça o bem, você não sabe o quanto é gratificante ver que suas
+                  atitudes semeiam o bem!
+                </p>
+              </li>
+
+              <li>
+                <p>Casado.</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section de formação -->
+      <section id="conhecimentos">
+        <div class="conhecimentosContent container">
+          <div class="conh_title">
+            <h2>Conhecimentos</h2>
+          </div>
+          <div class="conh_tech">
+            <div class="tech_card">
+              <i class="fa-brands fa-css3-alt stack"></i>
+              <h3>css</h3>
+            </div>
+            <div class="tech_card">
+              <i class="fa-brands fa-js stack"></i>
+              <h3>JavaScript</h3>
+            </div>
+            <div class="tech_card">
+              <i class="fa-brands fa-react stack"></i>
+              <h3>React</h3>
+            </div>
+            <div class="tech_card">
+              <i class="fa-brands fa-react stack"></i>
+              <h3>React Native</h3>
+            </div>
+            <div class="tech_card">
+              <i class="fa-brands fa-node-js stack"></i>
+              <h3>Node Js</h3>
+            </div>
+            <div class="tech_card">
+              <i class="fa-brands fa-php stack"></i>
+              <h3>PHP</h3>
+            </div>
+            <div class="tech_card">
+              <i class="fa-brands fa-laravel stack"></i>
+              <h3>Laravel</h3>
+            </div>
+            <div class="tech_card">
+              <i class="fa-solid fa-server stack"></i>
+              <h3>MySQL PostgreSQL MongoDB</h3>
+            </div>
+            <div class="tech_card">
+              <i class="fa-brands fa-python stack"></i>
+              <h3>Python</h3>
+            </div>
+            <div class="tech_card">
+              <i class="fa-solid fa-language stack"></i>
+              <h3>Português e Inglês</h3>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section de Portfólio -->
+      <section class="light" id="portfolio">
+        <div class="portfolioContent container">
+          <div class="portfolio_title">
+            <h2>Portfólio</h2>
+          </div>
+          <div class="projetos container">
+            <div class="medicenter">
+              <h3>MediCenter</h3>
+              <div class="techs">
+                <img src="./assets/images/html_mini.png" alt="HTML5" />
+                <img src="./assets/images/css-3_mini.png" alt="CSS" />
+                <img src="./assets/images/js_mini.png" alt="JavaScript" />
+              </div>
+              <div class="visualizacoes">
+                <a
+                  href="https://github.com/Lucas-FLima/medicenter-front-end"
+                  target="_blank"
+                  ><i class="fa-brands fa-github icons"></i
+                ></a>
+                <a
+                  href="https://lucas-flima.github.io/medicenter-front-end/"
+                  target="_blank"
+                  ><i class="fa-regular fa-eye icons"></i
+                ></a>
+              </div>
+            </div>
+            <div class="medicenter_image containerImages container">
+              <a
+                href="https://lucas-flima.github.io/medicenter-front-end/"
+                target="_blank"
+              ></a>
+            </div>
+          </div>
+          <div class="projetos container">
+            <div class="starbucks">
+              <h3>Starbucks</h3>
+              <div class="techs">
+                <img src="./assets/images/html_mini.png" alt="HTML5" />
+                <img src="./assets/images/css-3_mini.png" alt="CSS" />
+                <img src="./assets/images/js_mini.png" alt="JavaScript" />
+              </div>
+              <div class="visualizacoes">
+                <a
+                  href="https://github.com/Lucas-FLima/Starbucks/tree/main"
+                  target="_blank"
+                  ><i class="fa-brands fa-github icons"></i
+                ></a>
+                <a
+                  href="https://lucas-flima.github.io/Starbucks/"
+                  target="_blank"
+                  ><i class="fa-regular fa-eye icons"></i
+                ></a>
+              </div>
+            </div>
+            <div class="starbucks_image containerImages container">
+              <a
+                href="https://lucas-flima.github.io/Starbucks/"
+                target="_blank"
+              ></a>
+            </div>
+          </div>
+          <div class="projetos container">
+            <div class="awax">
+              <h3>Awax</h3>
+              <div class="techs">
+                <img src="./assets/images/html_mini.png" alt="HTML5" />
+                <img src="./assets/images/css-3_mini.png" alt="CSS" />
+                <img src="./assets/images/js_mini.png" alt="JavaScript" />
+              </div>
+              <div class="visualizacoes">
+                <a
+                  href="https://github.com/Lucas-FLima/awax-page"
+                  target="_blank"
+                  ><i class="fa-brands fa-github icons"></i
+                ></a>
+                <a
+                  href="https://lucas-flima.github.io/awax-page/"
+                  target="_blank"
+                  ><i class="fa-regular fa-eye icons"></i
+                ></a>
+              </div>
+            </div>
+            <div class="awax_image containerImages container">
+              <a
+                href="https://lucas-flima.github.io/awax-page/"
+                target="_blank"
+              ></a>
+            </div>
+          </div>
+          <div class="projetos container">
+            <div class="tributo">
+              <h3>Página de Tributo</h3>
+              <div class="techs">
+                <img src="./assets/images/html_mini.png" alt="HTML5" />
+                <img src="./assets/images/css-3_mini.png" alt="CSS" />
+              </div>
+              <div class="visualizacoes">
+                <a
+                  href="https://github.com/Lucas-FLima/tribute-page"
+                  target="_blank"
+                  ><i class="fa-brands fa-github icons"></i
+                ></a>
+                <a
+                  href="https://lucas-flima.github.io/tribute-page/"
+                  target="_blank"
+                  ><i class="fa-regular fa-eye icons"></i
+                ></a>
+              </div>
+            </div>
+            <div class="tributo_image containerImages container">
+              <a
+                href="https://lucas-flima.github.io/tribute-page/"
+                target="_blank"
+              ></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact">
+        <div class="conhecimentosContent container">
+          <div class="conh_title">
+            <h2>Contato</h2>
+          </div>
+          <form action="" method="Post" class="contacts">
+            <input type="text" name="name" id="name" placeholder="Nome" />
+            <input
+              type="text"
+              name="sobrenome"
+              id="sobrenome"
+              placeholder="Sobrenome"
+            />
+            <input type="text" name="email" id="email" placeholder="Email" />
+            <textarea
+              name="mensagem"
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Mensagem"
+              maxlength="1000"
+            ></textarea>
+            <button class="sendBtn">Enviar</button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!-- Footer da página -->
+    <footer>
+      <div class="copyright">
+        Todos os direitos reservados ©
+        <a href="https://github.com/Lucas-FLima" target="_blank"
+          >Lucas de Freitas Lima Santos</a
+        >
+      </div>
+    </footer>
+    <script src="./assets/scripts/script.js"></script>
+  </body>
+</html>
